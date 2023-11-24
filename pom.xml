@@ -30,6 +30,30 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<distributionManagement>
+		  <repository>
+		    <id>maven-releases</id>
+		    <!-- CHANGE HERE by your team Nexus server -->
+		    <url>http://52.71.236.167:8081/repository/maven-releases/</url>
+		  </repository>
+		  <snapshotRepository>
+		    <id>maven-snapshots</id>
+		    <!-- CHANGE HERE by your team Nexus server -->
+		    <url>http://52.71.236.167:8081/repository/maven-snapshots/</url>
+		  </snapshotRepository>
+	</distributionManagement>
+	<repositories>
+		<repository>
+		<id>maven-releases</id>
+		<name>maven-releases</name>
+		<url>http://52.71.236.167:8081/repository/maven-releases/</url>
+		</repository>
+		<repository>
+		<id>maven-snapshots</id>
+		<name>maven-snapshots</name>
+		<url>http://52.71.236.167:8081/repository/maven-snapshots/</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>
